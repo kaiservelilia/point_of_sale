@@ -11,6 +11,8 @@
  * file per style scope.
  *
  *= require_self
+ *= require AdminLTE.min
+ *= require _all-skins.min
  */
   @import "bootstrap";
   @import "semantic-ui";
