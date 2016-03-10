@@ -16,7 +16,7 @@ gem 'simple_form'
 gem 'semantic-ui-sass'
 gem 'cocoon'
 gem 'hirb'
-gem 'haml'
+# gem 'haml'
 
 group :development, :test do
   gem 'byebug'
