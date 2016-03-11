@@ -1,73 +1,73 @@
-<div class="content-wrapper" class="ui segment">
-  <section class="content-header">
-  <h1>Company Profile</h1>
-  <!-- dito ilalagay yung logo o avatar na iaaupload -->
-  </section>
-  <section class="content">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="box box-success">
-          <div class="box-header with-border">
-            <h3 class="box-title">About Us</h3>
-          </div>
-          <div class="box-body">
-            <strong><i class="fa fa-book margin-r-5"></i>  Website</strong>
-            <!-- /dito ilalagay yung ilalagay na website huhugutin sa add -->
-            <hr>
-            <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
-            <!-- /dito ilalagay yung ilalagay na address huhugutin sa add -->
-            <hr>
-            <strong><i class="fa fa-pencil margin-r-5"></i> Telephone number</strong>
-            <!-- /dito ilalagay yung ilalagay na telephone number huhugutin sa add -->
-            <hr>
-            <strong><i class="fa fa-file-text-o margin-r-5"></i> Notes</strong>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
-          </div>
+<section class="content-header">
+<h1>Company Profile</h1>
+<!-- dito ilalagay yung logo o avatar na iaaupload -->
+</section>
+<section class="content">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="box box-success">
+        <div class="box-header with-border">
+          <h3 class="box-title">About Us</h3>
+        </div>
+        <div class="box-body">
+          <strong><i class="fa fa-book margin-r-5"></i>  Website</strong>
+          <!-- /dito ilalagay yung ilalagay na website huhugutin sa add -->
+          <hr>
+          <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+          <!-- /dito ilalagay yung ilalagay na address huhugutin sa add -->
+          <hr>
+          <strong><i class="fa fa-pencil margin-r-5"></i> Telephone number</strong>
+          <!-- /dito ilalagay yung ilalagay na telephone number huhugutin sa add -->
+          <hr>
+          <strong><i class="fa fa-file-text-o margin-r-5"></i> Notes</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
         </div>
       </div>
-      <div class="col-md-9">
-        <div class="nav-tabs-custom">
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
-            <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
-            <li><a href="#settings" data-toggle="tab">Settings</a></li>
-          </ul>
-          <div class="tab-content">
-            <div class="active tab-pane" id="activity">
-              <div class="post">
-                <div class="user-block">
-                <a>Mission</a>
-                <a href='#' class='pull-right btn-box-tool'><i class='fa fa-times'></i></a>
-                </div>
-                <p>
-                  Lorem ipsum represents a long-held tradition for designers,
-                  typographers and the like. Some people hate it and argue for
-                  its demise, but others ignore the hate as they create awesome
-                  tools to help create filler text for everyone from bacon lovers
-                  to Charlie Sheen fans.
-                </p>
+    </div>
+    <div class="col-md-9">
+      <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
+          <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
+          <li><a href="#settings" data-toggle="tab">Settings</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="active tab-pane" id="activity">
+            <div class="post">
+              <div class="user-block">
+              <a>Mission</a>
+              <a href='#' class='pull-right btn-box-tool'><i class='fa fa-times'></i></a>
               </div>
-            <div class="post clearfix">
-              <div class='user-block'>
-                <a>Vission</a>
-              </div>
-                <p>
-                  Lorem ipsum represents a long-held tradition for designers,
-                  typographers and the like. Some people hate it and argue for
-                  its demise, but others ignore the hate as they create awesome
-                  tools to help create filler text for everyone from bacon lovers
-                  to Charlie Sheen fans.
-                </p>
-              </div>
+              <p>
+                Lorem ipsum represents a long-held tradition for designers,
+                typographers and the like. Some people hate it and argue for
+                its demise, but others ignore the hate as they create awesome
+                tools to help create filler text for everyone from bacon lovers
+                to Charlie Sheen fans.
+              </p>
+            </div>
+          <div class="post clearfix">
+            <div class='user-block'>
+              <a>Vission</a>
+            </div>
+              <p>
+                Lorem ipsum represents a long-held tradition for designers,
+                typographers and the like. Some people hate it and argue for
+                its demise, but others ignore the hate as they create awesome
+                tools to help create filler text for everyone from bacon lovers
+                to Charlie Sheen fans.
+              </p>
             </div>
           </div>
         </div>
-        <%= link_to "Add Company Info", new_company_path, class: "btn btn-success"  %>
-        <%= link_to "Management", management_item_categories_path %>
       </div>
+      <%= link_to "Add Company Info", new_company_path, class: "btn btn-success"  %>
+      <%= link_to "Item Categories", management_item_categories_path, class: "btn btn-success" %>
+      <%= link_to "Item Types", management_item_types_path, class: "btn btn-success" %>
     </div>
-  </section>
-</div>
+  </div>
+</section>
+
 
 <!-- 
 

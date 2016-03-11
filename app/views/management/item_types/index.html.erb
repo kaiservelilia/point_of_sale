@@ -1,0 +1,33 @@
+ <section class="content-header">
+   <h1>Item Types  |<small>Control Panel</small></h1>
+</section>
+<br>
+  <section class="content">
+    <div class="well">
+     <%= link_to "Add Item Types", new_management_item_type_path, class: "btn btn-success" %>
+     <br><br>
+      <table class="table hp-table table-splited">
+      <div class="box box-success">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @item_types.each do |it| %>
+            <tr>
+                <td><%= it.name %></td>
+                <td><%= it.description %></td>
+                <td>
+                  <%= link_to "Show", management_item_type_path(it.id), class: "btn btn-success btn-s" %>
+                  <%= link_to "Edit", edit_management_item_type_path(it.id), class: "btn btn-primary btn-s" %>
+                  <%= link_to "Delete", management_item_type_path(it.id), data: { :confirm => "Are you sure?"}, :method => :delete, class: "btn btn-warning btn-s" %>
+                </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </section>
