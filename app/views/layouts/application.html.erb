@@ -10,7 +10,10 @@
 	<div class="wrapper">
 		<%= render partial: "shared/header" %>
 		<%= render partial: "shared/side_nav" %>
-		<%= yield %>
+		<div class="content-wrapper" style="min-height: 916px;">
+			<%= yield %>
+		</div>
 	</div>
+	<%= render partial: "shared/footer" %>
 	</body>
 </html>
