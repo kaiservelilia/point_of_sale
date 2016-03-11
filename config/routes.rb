@@ -5,7 +5,7 @@ resources :companies
 
 namespace :management do
 		resources :item_categories
-		resources :item_items
+		resources :item_types
 		resources :employees
 end
 
