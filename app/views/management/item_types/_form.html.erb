@@ -6,6 +6,9 @@
 		<%= simple_form_for [:management, @item_type], defaults: { wrapper_html: { class: 'form-group' }, input_html: {class: 'form-control'} }, html: { multipart: true, novalidate: true } do |it| %>
 			<form role="form">
 				<div class="box-body">
+	        <%= it.association :item_category, as: :select, collection: ItemCategory.all %>
+	 			</div>
+				<div class="box-body">
 					<div class="form-group">
 					<%= it.input :name %>
 					</div>
