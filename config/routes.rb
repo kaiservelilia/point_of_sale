@@ -7,6 +7,7 @@ namespace :management do
 		resources :item_categories
 		resources :item_types
 		resources :employees
+		resources :items
 end
 
 end

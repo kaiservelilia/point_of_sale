@@ -1,0 +1,54 @@
+<section class="content-header">
+	<h1>Product
+		<small>Information</small>
+	</h1>
+</section>
+
+<section class="content">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="box box-success">
+				<div class="box-body">
+					<table class="ui selectable celled table">
+			      <tbody>
+			      	<tr>
+			      		<td><b>Product Category:</b></td>
+			      		<td><%= @item.item_type.item_category.name %></td>
+			      	</tr>
+			      	<tr>
+			      		<td><b>Product Type:</b></td>
+			      		<td><%= @item.item_type.name %></td>
+			      	</tr>
+
+			      	<tr>
+			      		<td><b>Product code:</b></td>
+			      		<td><%= @item.item_code %></td>
+			      	</tr>
+			      	<tr>	
+			      		<td><b>Name:</b></td>
+			      		<td><%= @item.item_name %></td>
+			      	</tr>
+			      	<tr>
+			      		<td><b>Description:</b></td>
+			      		<td><%= @item.description %></td>
+			      	</tr>
+			      	<tr>
+			      		<td><b>Cost Price:</b></td>
+			      		<td><%= @item.cost_price %></td>
+			      	</tr>
+			      	<tr>
+			      		<td><b>Selling Price:</b></td>
+			      		<td><%= @item.selling_price %></td>
+			      	</tr>
+			      	<tr>
+			      		<td><b>Quantity:</b></td>
+			      		<td><%= @item.quantity %></td>
+			      	</tr>
+			      </tbody>
+			    </table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

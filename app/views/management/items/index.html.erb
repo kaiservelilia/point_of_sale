@@ -1,0 +1,63 @@
+<section class="content-header">
+	<h1>Products
+		<small>Control Panel</small>
+	</h1>
+</section>
+
+<section class="content">
+	<div class="row">
+		<div class="col-md-2">
+			<br><%= link_to "NEW ITEM", new_management_item_path, class: "btn btn-block btn-success"%>
+		</div>
+
+		<div class="col-md-6"></div>
+
+		<div class="col-md-2">
+			<br><%= link_to "ITEM CATEGORY", management_item_categories_path, class: "btn btn-block btn-success"%>
+		</div>
+
+		<div class="col-md-2">
+			<br><%= link_to "ITEM TYPE", management_item_types_path, class: "btn btn-block btn-success"%>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="box box-success">
+				<div class="box-header">
+					<h3 class="box-title">Product Table</h3>
+				</div>
+				<div class="box-body">
+					 <table class="ui selectable celled table">
+			      <thead>
+			        <tr>
+			          <th>Product Code</th>
+			          <th>Name</th>
+			          <th>Cost Price</th>
+			          <th>Selling Price</th>
+			          <th>Quantity</th>
+			          <th>Actions</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <% @items.each do |e| %>
+				      <tr>
+				        <td><%= e.item_code %></td>
+				        <td><%= e.item_name %></td>
+				        <td><%= e.cost_price %></td>
+				        <td><%= e.selling_price %></td>
+				        <td><%= e.quantity %></td>
+				        <td>
+					        <%= link_to "SHOW", management_item_path(e.id), class: "btn btn-success btn-s" %>
+					        <%= link_to "EDIT",  edit_management_item_path(e.id), class: "btn btn-primary btn-s" %>
+					        <%= link_to "DELETE", management_item_path(e.id), data: {:confirm => "Are you sure?"}, :method => :delete, class: "btn btn-warning btn-s" %>
+				        </td>
+				      </tr>
+			    		<% end %> 
+			      </tbody>
+			    </table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

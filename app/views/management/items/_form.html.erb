@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-md-6">
+		<div class="box box-success">
+			<%= simple_form_for [:management, @item], defaults: { wrapper_html: { class: 'form-group' }, input_html: {class: 'form-control'} }, html: { multipart: true, novalidate: true } do |e| %>
+				<form role="form">
+					<div class="box-body">
+
+                        <div class="form-group">
+                            <%= e.association :item_type, as: :select, item_type: ItemType.all %>
+                        </div>
+                        
+						<div class="form-group">
+                            <%= e.input :item_code %>
+                        </div>
+
+                        <div class="form-group">
+                            <%= e.input :item_name %>
+                        </div>
+
+                        <div class="form-group">
+                                <%= e.input :description %>
+                        </div>
+
+
+                        <div class="form-group">
+                                <%= e.input :cost_price %>
+                        </div>
+
+                        <div class="form-group">
+                                <%= e.input :selling_price %>
+                        </div>
+
+                        <div class="form-group">
+                                <%= e.input :quantity %>
+                        </div>
+
+					</div>
+                    
+					<div class="box-footer">
+						<button class="btn btn-success"><i class="save icon"></i>SAVE</button>
+					</div>
+				</form>
+			<% end %>
+		</div>
+	</div>
+</div>
