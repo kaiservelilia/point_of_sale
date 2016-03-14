@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="ui segment">
+<br>
+	<h1>Company Information</h1>
+		<table class="table table-bordered">
+		<div class="box box-success">
+		</div>
+			<thead>
+				<tr>
+					<th>Name of Company</th>
+					<th>Telephone Number</th>
+					<th>Website</th>
+					<th>Address</th>
+				</tr>
+			</thead>
+			<tbody>
+			<% @companies	.each do |company| %>
+				<tr>
+					<td><%= company.company_name %></td>
+					<td><%= company.telephone %></td>
+					<td><%= company.website %></td>
+					<td><%= company.address %></td>
+				</tr>
+			<% end %>
+			</tbody>
+		</table>
+	</div>
+</div>

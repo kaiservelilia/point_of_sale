@@ -37,7 +37,7 @@ module Management
 		def destroy
 			@item_category = ItemCategory.find(params[:id])
 			@item_category.destroy
-			redirect_to item_categories_path
+			redirect_to management_item_categories_path
 		end
 
 		def item_category_params
