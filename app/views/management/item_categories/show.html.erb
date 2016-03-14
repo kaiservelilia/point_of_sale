@@ -19,5 +19,21 @@
 					</tbody>
 				</div>
 			</table>
+					<table class="table hp-table table bordered" >
+						<thead>
+							<tr>
+								<td>Types Under This Category</td>
+								
+							</tr>
+						</thead>
+						<tbody>
+							<% @item_types.each do |it| %>
+							<tr>
+								<td><%= it.name %></td>
+								<td><%= it.description %></td>
+							</tr>
+							<% end %>
+						</tbody>
+					</table>
 		</div>
 	</section>

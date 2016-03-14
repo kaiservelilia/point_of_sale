@@ -11,7 +11,7 @@
         <thead>
           <tr>
             <th>Name</th>
-            <th>Description</th>
+            <!-- <th>Description</th> -->
             <th>Category</th>
             <th>Actions</th>
           </tr>
@@ -20,7 +20,7 @@
           <% @item_types.each do |it| %>
             <tr>
                 <td><%= it.name %></td>
-                <td><%= it.description %></td>
+                <!-- <td><%= truncate it.description, length: 300 %><%= it.description %></td> -->
                 <td><%= it.try( :item_category).try (:name) %></td>
                 <td>
                   <%= link_to "Show", management_item_type_path(it.id), class: "btn btn-success btn-s" %>

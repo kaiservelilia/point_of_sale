@@ -26,6 +26,14 @@
           <hr>
           <strong><i class="fa fa-file-text-o margin-r-5"></i> Notes</strong>
           <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+        <% if (Company.count == 0) %>
+        <%= link_to "Add Company Info", new_management_company_path(company.id), class: "btn btn-primary btn-s" %>
+        <%= link_to "Edit Company Info", edit_management_company_path(company.id), class: "btn btn-primary btn-s" %>
+        <%= link_to "Category", management_item_types_path, class: "btn btn-primary btn-s" %>
+        <% else %>
+        <%= link_to "Edit Company Info", edit_management_company_path(company.id), class: "btn btn-success btn-s" %>
+        <% end %>
+      <% end %>
         </div>
       </div>
     </div>
@@ -64,14 +72,6 @@
           </div>
         </div>
       </div>
-        <% if (Company.count == 0) %>
-        <%= link_to "Add Company Info", new_management_company_path(company.id), class: "btn btn-primary btn-s" %>
-        <%= link_to "Edit Company Info", edit_management_company_path(company.id), class: "btn btn-primary btn-s" %>
-        <%= link_to "Category", management_item_types_path, class: "btn btn-primary btn-s" %>
-        <% else %>
-        <%= link_to "Edit Company Info", edit_management_company_path(company.id), class: "btn btn-primary btn-s" %>
-        <% end %>
-      <% end %>
     </div>
   </div>
 </section>

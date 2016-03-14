@@ -20,6 +20,7 @@ module Management
 
 		def show
 			@item_category = ItemCategory.find(params[:id])
+			@item_types = ItemType.where(item_category_id: @item_category.id)
 		end
 
 		def edit
